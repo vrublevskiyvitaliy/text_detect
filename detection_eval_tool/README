@@ -1,0 +1,13 @@
+./detection_eval_batch.py -h for help
+
+examples:
+
+	$ ./detection_eval_batch.py ground_truth predictions_circle
+	0.997870830376 0.998461356374 0.998166006034
+
+	$ ./detection_eval_batch.py ground_truth predictions_text_box --format text_box
+	1.0 1.0 1.0
+
+if you want to evaluate on only translucent or english only text boxes,
+you can extract those text boxes from our labeled data, forming .text_box
+files, overriding original ones, and then evaluate using the same protocol.
